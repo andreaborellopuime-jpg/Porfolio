@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Andrea B Puime | Portfolio</title>
+  <meta name="description" content="Portfolio de Andrea B Puime, estudiante de programación en la EEST N°2.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Exo+2:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <header class="topbar">
+    <div class="topbar-buttons">
+      <button class="bar-btn bar-btn-contact" id="contactToggle" type="button"
+              aria-expanded="false" aria-controls="contactPanel" aria-label="Contacto">
+        <img src="img/icon-tel.png" alt="" width="40" height="40">
+      </button>
+
+      <button class="bar-btn bar-btn-theme" id="themeToggle" type="button"
+              aria-label="Cambiar a modo oscuro">
+        <img id="themeIcon" src="img/icon-luna.png" alt="" width="40" height="40">
+      </button>
+    </div>
+
+    <nav class="contact-panel" id="contactPanel" aria-label="Contacto" hidden>
+      <a href="mailto:andreaborellopuime@gmail.com" aria-label="Enviar un mail">
+        <img src="img/icon-mail.png" alt="" width="34" height="34">
+      </a>
+      <a href="https://www.linkedin.com/in/andrea-estefanía-puime-b33890448?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener" aria-label="LinkedIn" class="linkedin">in</a>
+      <a href="https://github.com/andreaborellopuime-jpg" target="_blank" rel="noopener" aria-label="GitHub">
+        <img src="img/icon-github.png" alt="" width="40" height="40">
+      </a>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="hero" id="sobre-mi">
+      <div class="hero-text">
+        <h1>Andrea B Puime</h1>
+        <p class="hero-role">Estudiante de programación en la EEST N°2</p>
+        <p class="hero-bio">
+          Me apasiona el arte, los videojuegos y el diseño sobre todo.
+          He aprendido a desenvolverme a mi modo en este campo.
+        </p>
+
+        <h2 class="small-title">Lenguajes y tecnologías favoritas</h2>
+        <ul class="tags">
+          <li>html</li>
+          <li>css</li>
+          <li>php</li>
+        </ul>
+      </div>
+
+      <div class="diamond" aria-hidden="false">
+        <img src="img/fotico.jpg" alt="Foto de Andrea B Puime">
+      </div>
+    </section>
+
+    <section class="projects" id="proyectos">
+      <h2 class="section-title">Proyectos del año</h2>
+
+      <article class="featured">
+        <div class="featured-card">
+          <img class="featured-img" src="img/ghost-artist.jpg" alt="Ilustración de Ghost Artist: un fantasma con un pincel">
+          <div class="featured-body">
+            <p class="badge">Proyecto final</p>
+            <h3>Ghost Artist</h3>
+            <p>
+              Página web para aprender a dibujar en base a la práctica manual e independiente
+              para todo aquel que desee mejorar o aprender desde cero.
+              Fue desarrollado con php, html, css y mysql.
+            </p>
+          </div>
+
+          <button class="corner-btn" id="capturesToggle" type="button"
+                  aria-expanded="false" aria-controls="capturesPanel"
+                  aria-label="Ver capturas de Ghost Artist">
+            <img src="img/esquina.png" alt="" class="corner-bg">
+            <img src="img/flecha.png" alt="" class="corner-arrow">
+          </button>
+        </div>
+
+        <div class="captures" id="capturesPanel">
+          <div class="captures-inner">
+            <div class="captures-frame">
+              <div class="captures-grid">
+                <img src="img/ga-captura-1.png" alt="Captura 1 de Ghost Artist: libro con pizarrón" loading="lazy">
+                <img src="img/ga-captura-2.png" alt="Captura 2 de Ghost Artist: preguntas de la tarea" loading="lazy">
+                <img src="img/ga-captura-3.png" alt="Captura 3 de Ghost Artist: desafío diario" loading="lazy">
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <div class="projects-grid">
+        <article class="project-card">
+          <img src="img/mehanik.png" alt="Menú principal del juego MEHANIK" loading="lazy">
+          <div class="project-body">
+            <h3>MEHANIK</h3>
+            <p>
+              Juego de terror con mecánicas tap and click basado en la saga de videojuegos FNAF
+              (realizado en grupo como actividad para Globant).
+            </p>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <img src="img/anime-corner.png" alt="Tarjetas de recomendaciones de Anime corner" loading="lazy">
+          <div class="project-body">
+            <h3>Anime corner</h3>
+            <p>
+              Aplicación de recomendaciones de anime
+              (trabajo realizado para la materia de desarrollo web).
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year">2026</span> Andrea B Puime</p>
+  </footer>
+
+</body>
+</html>
