@@ -1,2 +1,0 @@
-# Porfolio
-mi porfolio digital
